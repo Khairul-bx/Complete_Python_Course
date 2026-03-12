@@ -4,7 +4,7 @@
 s = {10, 20, 30}
 print(type(s))
 print(s)
-x = set["hello", 101, 102]
+x = set["2", 101, 102]
 print(x)
 
 
