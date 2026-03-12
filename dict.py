@@ -69,4 +69,51 @@ for i in range(n):
 print(Phone)
 
 new_phone = phone.copy()
-print(new_phone) 
+print(new_phone)
+
+std = ['Khairul', 'Beex', "Kd"]
+roll = [52, 53, 54]
+age = [20, 21, 22]
+zipped_obj = zip(std, roll)
+for ele in zipped_obj:
+    print(ele)
+
+
+# view obj of dict ------------------------
+
+
+emp = {'name' : 'beex', 'salary' : 120000}
+
+k = emp.keys()
+print(k)
+
+v = emp.values()
+print(v)
+
+i = emp.items()
+print(i)
+
+sd = emp.setdefault('salary', 0)
+print(sd)
+
+
+# Nested Dictionary ------------------------------
+
+
+students = {
+    'Khairul' : {'age' : 20, 'gender' : 'male', 'fees' : 12999},
+    'bees' : {'age' : 21, 'gender' : 'male', 'fees' : 15999}     
+}
+print(students)
+
+print(students['bees'])
+print(students['Khairul']['gender'])
+
+while True:
+    name = input("enter name : ")
+    fee = int(input("enter fees : "))
+    students[name] = fee
+    x = input("continue : yes or no : ").lower()
+    if x != 'yes':
+        break
+print(students)
