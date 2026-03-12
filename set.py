@@ -51,3 +51,6 @@ print(s1.difference(s2))
 print(s1 > s2)
 print(s1 < s2)
 print(s1 == s2)
+
+fs = frozenset([1,2,3])
+print(fs)
